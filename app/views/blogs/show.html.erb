@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @blog.title %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @blog.url %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @blog.description %>
+</p>
+
+<p>
+  <b>Channel:</b>
+  <%= @blog.channel %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @blog.language %>
+</p>
+
+<p>
+  <b>Avg mon imps:</b>
+  <%= @blog.avg_mon_imps %>
+</p>
+
+<p>
+  <b>Alexa:</b>
+  <%= @blog.alexa %>
+</p>
+
+<p>
+  <b>Page rank:</b>
+  <%= @blog.page_rank %>
+</p>
+
+<p>
+  <b>Approved:</b>
+  <%= @blog.approved %>
+</p>
+
+<p>
+  <b>Desired price:</b>
+  <%= @blog.desired_price %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @blog.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>

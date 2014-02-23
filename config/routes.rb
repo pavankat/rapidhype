@@ -1,4 +1,7 @@
 Rapidhype::Application.routes.draw do
+  resources :blogs
+
+
   authenticated :user do
     root :to => 'home#index'
   end

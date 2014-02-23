@@ -16,3 +16,24 @@ puts 'DEFAULT USERS'
 user = User.find_or_create_by_email :name => ENV['ADMIN_NAME'].dup, :email => ENV['ADMIN_EMAIL'].dup, :password => ENV['ADMIN_PASSWORD'].dup, :password_confirmation => ENV['ADMIN_PASSWORD'].dup
 puts 'user: ' << user.name
 user.add_role :admin
+
+language_a = Language.create(:language => "English")
+language_b = Language.create(:language => "Other")
+channel_a = Channel.create(:name => "Automotive")
+channel_a = Channel.create(:name => "Business &amp; Finance")
+channel_a = Channel.create(:name => "Education")
+channel_a = Channel.create(:name => "Entertainment")
+channel_a = Channel.create(:name => "Family &amp; Parenting")
+channel_a = Channel.create(:name => "Gaming")
+channel_a = Channel.create(:name => "Food &amp; Drink")
+channel_a = Channel.create(:name => "Government &amp; Politics")
+channel_a = Channel.create(:name => "Home &amp; Architecture")
+channel_a = Channel.create(:name => "Pets")
+channel_a = Channel.create(:name => "Sports")
+channel_a = Channel.create(:name => "Style &amp; Beauty")
+channel_a = Channel.create(:name => "Start Ups")
+channel_a = Channel.create(:name => "Technology")
+channel_a = Channel.create(:name => "Travel")
+channel_a = Channel.create(:name => "Web Design &amp; Development")
+channel_a = Channel.create(:name => "Weddings")
+channel_a = Channel.create(:name => "Visual Arts &amp; Design")
