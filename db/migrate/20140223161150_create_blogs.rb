@@ -11,11 +11,11 @@ class CreateBlogs < ActiveRecord::Migration
       t.integer :page_rank
       t.boolean :approved
       t.float :desired_price
-      t.float :actual_price
       t.references :user
 
       t.timestamps
     end
+    add_index :blogs, :language_id 
     add_index :blogs, :channel_id
     add_index :blogs, :user_id
   end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140223161248) do
+ActiveRecord::Schema.define(:version => 20140223185916) do
 
   create_table "blogs", :force => true do |t|
     t.text     "title"
@@ -24,13 +24,18 @@ ActiveRecord::Schema.define(:version => 20140223161248) do
     t.integer  "page_rank"
     t.boolean  "approved"
     t.float    "desired_price"
-    t.float    "actual_price"
     t.integer  "user_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "external_links"
+    t.integer  "links"
+    t.float    "mozrank"
+    t.float    "page_authority"
+    t.float    "domain_authority"
   end
 
   add_index "blogs", ["channel_id"], :name => "index_blogs_on_channel_id"
+  add_index "blogs", ["language_id"], :name => "index_blogs_on_language_id"
   add_index "blogs", ["user_id"], :name => "index_blogs_on_user_id"
 
   create_table "channels", :force => true do |t|

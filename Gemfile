@@ -9,6 +9,13 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# seomoz api
+gem "linkscape", "~> 0.3.2"
+
+# get page rank and alexa rank
+gem "PageRankr", "~> 4.2.0"
+
+
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'cancan'
